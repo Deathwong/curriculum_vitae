@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CV jeanmensah</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;
+     0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="https://kit.fontawesome.com/bd276d4b5c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+</head>
+<body>
+<section>
+    <!-- MOBILE NAVIGATION -->
+    <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+           onclick="toggleNavigation()">☰</a>
+    </div>
+    <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about"
+           class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+           onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume"
+           class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+           onclick="toggleNavigation()">RESUME</a>
+        <a href="#contact"
+           class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green"
+           onclick="toggleNavigation()">CONTACT</a>
+    </div>
+
+    <!-- SOCIAL SECTION -->
+    <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+
+        <!--SOCIAL NETWORK BUTTONS-->
+
+        <div class="links w3-margin-top w3-padding-small">
+            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/Deathwong"
+               target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="icon-link w3-text-sand w3-hover-text-amber"
+               href="https://www.linkedin.com/in/mawulolo-jean-baptiste-mensah-b6ba9a225/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+            <a href="CV.pdf"
+               class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large"
+               target="_blank" download="CV.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-arrow-down" style="vertical-align: -0.35em;">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+                <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+            </a>
+        </div>
+        <div class="w3-container w3-padding-16">
+            <a href="lettre de Motivation EPITECH.pdf"
+               class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large"
+               target="_blank" download="lettre de Motivation EPITECH.pdf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-arrow-down" style="vertical-align: -0.35em;">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+                <span class="w3-margin-left download-text">DOWNLOAD COVER LETTER</span>
+            </a>
+        </div>
+    </section>
+
+    <!--CV CONTENT SECTION-->
+    <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+            <a href="#home"
+               class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULUM
+                VITAE</a>
+            <a href="#contact"
+               class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+               style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+            <a href="#resume"
+               class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+               style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+            <a href="#about"
+               class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small"
+               style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+            <!--HOME SECTION-->
+            <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+                <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles,
+                    you overcome them."</p>
+                <h1>Mensah Mawulolo Jean-Baptiste (18)</h1>
+                <h2>Software Developer</h2>
+                <p></p>
+            </div>
+
+            <!--ABOUT SECTION-->
+            <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+                <p class="w3-margin-top-2">
+                    Hello my name is Mensah Mawulolo Jean-Baptiste, I am 18 year and I come from Togo. Last year I
+                    prepared my computer science license and I have a scientific leaving certificate. After my
+                    baccalaureate I had the chance to work as an intern in an IT department at ECOBANK.
+                </p>
+                <p class="">
+                    I write and speak French fluently. As strengths, I am curious and I really like computers and as
+                    faults I don't like routine and I like competition. I was born in Togo and lived there, but I also
+                    spent a year in Mali for my studies.
+
+                </p>
+                <p class="">
+                    my hobbies are my interest in Japanese culture and musical art. My short-term project is to obtain
+                    my advanced technician's certificate and in the long term to create my company.
+                </p>
+            </div>
+
+            <!--RESUME-->
+            <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+                <div class="w3-container w3-margin-top-2 w3-cursive">
+
+                    <!--EMPLOYMENT HISTORY SECTION-->
+                    <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
+                    <div class="">
+                        <h4>Intern in the IT department of Ecobank</h4>
+                        <p>September 2021</p>
+                        <ul class="w3-ul" style="font-weight: 500;">
+                            <li>Ensures that files containing customer account information are scanned and sent to
+                                company computers
+                            </li>
+                            <li>Place customer account information in company databases and ensure they are filed</li>
+                            <li>Ensure that account information is accessible to members of the company who need to
+                                access it
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!---EDUCATION SECTION-->
+                <div class="w3-container w3-margin-top-2 w3-cursive">
+                    <h3 class="w3-border-amber">MY EDUCATION</h3>
+                    <h4>BTS SIO - Option SLAM (Development) - 1st year</h4>
+                    <p>September 2022 - Present </p>
+                    <h4>Bachelor in Software Engineering</h4>
+                    <p>October 2021 - July 2022 </p>
+                    <h4>Baccalaureate 2nd part series D at EUREKA-ADAMAVO high school</h4>
+                    <p>September 2018 - August 2021 </p>
+                </div>
+
+                <!--SKILLS SECTION-->
+                <div class="w3-container w3-margin-top-2 w3-cursive">
+                    <h3 class="w3-border-amber">MY SKILLS</h3>
+                    <!--SOFT SKILLS-->
+                    <h4>Soft skills</h4>
+                    <ul class="w3-ul" style="font-weight: 500;">
+                        <li>I have good analytical skills when faced with a problem</li>
+                        <li>I have a talent for researching different processes to offer different improvements and
+                            solutions to a code
+                        </li>
+                        <li>I always have a global vision of each project I undertake in order to anticipate the
+                            problems I will face.
+                        </li>
+                    </ul>
+                    <!--TECHNICAL SKILLS-->
+                    <h4>Technical skills</h4>
+                    <ul class="w3-ul" style="font-weight: 500;">
+                        <li>I have a great experience with MS Office tools</li>
+                        <li>I program in programming languages: C, JAVA</li>
+                        <li>I use HTML, CSS, Bootstrap</li>
+                        <li>Smartphone repair
+                        </li>
+                    </ul>
+                </div>
+
+                <!--INTERESTS SECTION-->
+                <div class="w3-container w3-margin-top-2 w3-cursive">
+                    <h3 class="w3-border-amber">MY HOBBIES AND INTERESTS</h3>
+                    <ul class="w3-ul" style="font-weight: 500;">
+                        <li>Organize events</li>
+                        <li>I like to play board games with other people</li>
+                    </ul>
+                </div>
+
+                <!--REFERENCE SECTION-->
+                <div class="w3-container w3-margin-top-2 w3-cursive">
+                    <h3 class="w3-border-amber">MY REFERENCES</h3>
+                    <h4>Mensah Mawulolo Jean-Baptiste, Software Developer</h4>
+                    <ul class="w3-ul" style="font-weight: 500;">
+                        <li>+33767691863</li>
+                        <li>jeanbaptiste.mensah@outlook.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--CONTACT SECTION-->
+            <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT
+                    DETAILS</h2>
+                <div class="w3-margin-top-2" style="font-weight: 500;">
+                    <p>Name: Mensah Mawulolo Jean-Baptiste</p>
+                    <p>Adress: 27 Rue de la Mogotte 77200 Torcy chez ANANI-TOULASSI Edem</p>
+                    <p>Phone number: +33767691863</p>
+                    <p>E-mail: jeanbaptiste.mensah@outlook.com</p>
+                </div>
+            </div>
+
+            <!--FOOTER-->
+            <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+            <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+                <p>© 2021 - Mensah Mawulolo Jean-Baptiste</p>
+
+            </footer>
+
+            <!--END OF CV SECTION-->
+        </div>
+    </section>
+</section>
+<script>
+    // Function to toggle mobile navigation
+    function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+            nav.classList.remove('w3-show');
+        } else {
+            nav.classList.add('w3-show');
+        }
+    }
+</script>
+<script>
+    // Script to load feather icons
+    feather.replace()
+</script>
+
+</body>
